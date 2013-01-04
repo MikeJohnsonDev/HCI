@@ -6,26 +6,81 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/recorder.js"></script>
 
 		<script type="text/javascript">
-			$(document).on("mobileinit", function()
+			window.URL = window.URL || window.webkitURL;
+			window.AudioContext = window.AudioContext || window.webkitAudioContext;
+			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+									 navigator.mozGetUserMedia || navigator.msGetUserMedia;
+			var audioContext = null;
+			var recorder = null;
+			var stream = null;
+
+			$(document).bind("mobileinit", function ()
 			{
-				$.support.cors = true;
-				$.mobile.allowCrossDomainPages = true;
+				$(document).bind("pageshow", function (e, data)
+				{
+					var page = $(e.target);
+					audioContext = new AudioContext;
+
+					if (navigator.getUserMedia)
+					{
+						navigator.getUserMedia({
+							audio: true,
+							video: false
+						}, function (localStream)
+						{
+							stream = localStream;
+
+							var input = audioContext.createMediaStreamSource(stream);
+							input.connect(audioContext.destination);
+
+							recorder = new Recorder(input);
+						}, onFail);
+					}
+					else
+					{
+						alert('getUserMedia() is not supported in your browser');
+					}
+
+					$("#listen").click(function ()
+					{
+						$(this).hide();
+						$("#stopListen").show();
+					});
+
+					$("#stopListen").click(function ()
+					{
+						$(this).hide();
+						$("#listen").show();
+					});
+
+					$("#speak").click(function ()
+					{
+						$(this).hide();
+						$("#stopSpeak").show();
+
+						recorder && recorder.record();
+					});
+
+					$("#stopSpeak").click(function ()
+					{
+						$(this).hide();
+						$("#speak").show();
+
+						recorder && recorder.stop();
+					});
+				});
 			});
-		</script>
 
-		<script type="text/javascript" src="js/cordova-2.3.0.js"></script>
-
-		<script type="text/javascript">
+			function onFail()
+			{
+				alert("Failed");
+			}
 		</script>
 
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="js/listenandspeak.js"></script>
-
-		<script type="text/javascript">
-			app.initialize();
-		</script>
 	</head>
 
 	<body>
