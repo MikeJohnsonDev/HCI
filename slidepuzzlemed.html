@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slide Puzzle</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+	<!--PUZZLE---------------------------------http://jsfiddle.net/tRmkx/35/----------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="css/result-light.css">
+		<script type='text/javascript' src="js/noise.js"></script>
+		<script type='text/javascript' src="js/slide-puzzle.js"></script>
+    
+		<style type='text/css'>
+			#blogic_puzzle_container_wrap {
+			border: 2px groove #777;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			padding: 1px;
+			background: #ccc;
+			-webkit-box-shadow: 
+				rgba(0,0,0, 0.2) 0 11px 5px 5px inset,
+				rgba(0,0,0, 0.4) 0 1px 2px
+			;
+			width: 600px;
+			}
+		</style>
+  
+		<script type='text/javascript'>//<![CDATA[ 
+			$(function(){
+			var $puzzle = $('#blogic_puzzle_container');
+			var pieceSize = parseInt($puzzle.attr('data-puzzle-piece-size'));
+			$puzzle.puzzle(pieceSize);
+			$('#blogic_puzzle_container_wrap').noisy({
+				opacity: 0.06,
+				monochromatic: true
+			});
+			});//]]>  
+		</script>
+		<!--PUZZLE----------------http://jsfiddle.net/tRmkx/35/---------------------------------------------------------------->
+		
+	</head>
+	
+	<body>
+		<div data-role="page" id="slidepuzzle">
+			<div data-role="header" data-position="fixed">
+				<a href="#" data-direction="reverse" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
+				<h1>Medium - 4x4</h1>
+				<a href="settings.html" data-icon="cog" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
+			</div>
+
+			<div data-role="content">
+		
+			
+			<div id="blogic_puzzle_container_wrap">
+				<div id="blogic_puzzle_container" data-puzzle-piece-size="150">
+					<img src="images/puzzlemed.jpg" alt="Blogic Logo Puzzle" title="" width="600" height="600" border="0" />
+				</div>
+			</div>
+			<div class="ui-grid-b">
+					<div class="ui-block-a"><a href="slidepuzzleeasy.html" data-role="button" data-theme="b" rel="external">Easy (3x3)</a></div>
+					<div class="ui-block-b"><a href="slidepuzzlemed.html" data-role="button" data-theme="b" rel="external">Medium (4x4)</a></div>
+					<div class="ui-block-c"><a href="slidepuzzlehard.html" data-role="button" data-theme="b" rel="external">Hard (5x5)</a></div>
+			</div>
+		
+
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="footnav">
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="index.html" rel="external"><img src="images/home.png" height="35" width="35"/><br/>Home</a></li>
+						<li><a href="map.html" rel="external"><img src="images/minimap.png" height="35" width="35"/><br/>Map</a></li>
+						<li><a href="search.html" rel="external"><img src="images/search.png" height="35" width="35"/><br/>Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

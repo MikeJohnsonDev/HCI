@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).on("pageshow", function ()
+			{
+				$(".flexslider").flexslider({
+					animation: "slide",
+					touch: true
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div data-role="page" id="search">
+			<div data-role="header" data-position="fixed" data-id="searchheadnav">
+				<h1>Search</h1>
+				<a href="settings.html" data-icon="cog" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
+			</div>
+			
+
+			<div data-role="content">
+				<div data-role="navbar" data-grid="c">
+					<ul>
+						<li><a href="search.html" class="ui-btn-active" rel="external">A-Z</a></li>
+						<li><a href="bysport.html" rel="external">By Sport</a></li>
+						<li><a href="popular.html" rel="external">Popular</a></li>
+						<li><a href="favourites.html" rel="external">Favourites</a></li>
+					</ul>
+				</div>
+
+				<br />
+
+				<ul data-role="listview" data-inset="true" data-autodividers="true" data-filter="true">
+					<li><a href="#" data-rel="dialog">Alan Shearer</a></li>
+					<li><a href="#" rel="external">Andy Murray</a></li>
+					<li><a href="#" rel="external">Andy Roddick</a></li>
+					<li><a href="#" rel="external">Carl Lewis</a></li>
+					<li><a href="#" rel="external">Classic Wimbledon moments</a></li>
+					<li><a href="beckham.html" data-rel="dialog">David Beckham</a></li>
+					<li><a href="#" rel="external">Dennis Bergkamp</a></li>
+					<li><a href="#" rel="external">Doping cases in Athletics</a></li>
+					<li><a href="#" rel="external">England 1966 World Cup Team</a></li>
+					<li><a href="ennis.html" data-rel="dialog">Jessica Ennis</a></li>
+					<li><a href="#" rel="external">Johan Cryuff</a></li>
+					<li><a href="#" rel="external">John Mcenroe</a></li>
+					<li><a href="wilkinson.html" data-rel="dialog">Johnny Wilkinson</a></li>
+					<li><a href="Lomu.html" data-rel="dialog">Jonah Lomu</a></li>
+					<li><a href="pieterson.html" data-rel="dialog">Kevin Pieterson</a></li>
+					<li><a href="dallaglio.html" data-rel="dialog">Lawrence Dallaglio</a></li>
+					<li><a href="#" rel="external">Maurice Greene</a></li>
+					<li><a href="martinjohnson.html" data-rel="dialog">Martin Johnson</a></li>
+					<li><a href="#" rel="external">Mo Farah</a></li>
+					<li><a href="#" rel="external">Paula Radcliffe</a></li>
+					<li><a href="#" rel="external">Rafael Nadal</a></li>
+					<li><a href="ponting.html" data-rel="dialog">Ricky Ponting</a></li>
+					<li><a href="federer.html" data-rel="dialog">Roger Federer</a></li>
+					<li><a href="tendulkar.html" data-rel="dialog">Sachin Tendulkar</a></li>
+					<li><a href="afridi.html" data-rel="dialog">Shahid Afridi</a></li>
+					<li><a href="gerrard.html" data-rel="dialog">Steven Gerrard</a></li>
+					<li><a href="#" rel="external">Team GB - London 2012</a></li>
+					<li><a href="#" rel="external">Tim Henman</a></li>
+					<li><a href="henry.html" data-rel="dialog">Thierry Henry</a></li>
+					<li><a href="bolt.html" data-rel="dialog" >Usain Bolt</a></li>
+					<li><a href="#" rel="external">World Cup Chronicles</a></li>
+					<li><a href="zidane.html" data-rel="dialog">Zinedine Zidane</a></li>
+				</ul>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="footnav">
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="index.html"  rel="external"><img src="images/home.png" height="35" width="35"/><br/>Home</a></li>
+						<li><a href="map.html"  rel="external"><img src="images/minimap.png" height="35" width="35"/><br/>Map</a></li>
+						<li><a href="search.html"  class="ui-btn-active ui-state-persist" rel="external"><img src="images/search.png" height="35" width="35"/><br/>Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

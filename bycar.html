@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>By Car Directions</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBbIWQUGV-qcyaKrSaFktfHS42xhrVWHVc&sensor=true&libraries=places"></script>
+		<script type="text/javascript" src="js/jquery.ui-1.8.15/jquery.ui.autocomplete.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.map.extensions.js"></script>
+
+		<script type="text/javascript">
+			$(document).on("pageshow", function ()
+			{
+				$("#map_canvas").gmap({ center: "51.49587,-0.17636", zoom: 15, disableDefaultUI: true });
+
+				$("#map_canvas").gmap("getCurrentPosition", function (position, status)
+				{
+					if (status === "OK")
+					{
+						$("#map_canvas").gmap({ center: new google.maps.LatLng(position.coords.latitude,
+												position.coords.longitude), zoom: 15, disableDefaultUI: true });
+
+						$("#from").val(position.coords.latitude + ", " + position.coords.longitude);
+					}
+					else
+					{
+						alert("Unable to get current position");
+					}
+				});
+
+				$("#submit").click(function ()
+				{
+					$("#map_canvas").gmap("displayDirections", { origin: $("#from").val(),
+																 destination: "Natural History Museum, Cromwell Road, London, SW7 5BD",
+																 travelMode: google.maps.DirectionsTravelMode.DRIVING },
+										  { panel: document.getElementById("directions")},
+										  function (response, status)
+					{
+						status === "OK" ? $("#results").show() : $("#results").hide();
+					});
+
+					return false;
+				});
+
+				$("#map_canvas").gmap("refresh");
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div data-role="page" id="bycar">
+			<div data-role="header" data-position="fixed">
+				<a href="#" data-direction="reverse" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
+				<h1>By Car Directions</h1>
+				<a href="settings.html" data-icon="cog" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
+			</div>
+
+			<div data-role="content">
+				<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+					<div id="map_canvas" style="height:300px;"></div>
+					<p>
+						<label for="from">From</label>
+						<input id="from" class="ui-bar-c" type="text" placeholder="Enter address/postcode here" />
+					</p>
+
+					<a id="submit" href="#" data-role="button" >Get directions</a>
+				</div>
+				<div id="results" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" style="display:none;">
+					<div class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top ui-btn-up-undefined">Results</div>
+					<div id="directions"></div>
+					<div class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-bottom ui-btn-up-undefined"></div>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="footnav">
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="index.html" rel="external"><img src="images/home.png" height="35" width="35"/><br/>Home</a></li>
+						<li><a href="map.html" rel="external"><img src="images/minimap.png" height="35" width="35"/><br/>Map</a></li>
+						<li><a href="search.html" rel="external"><img src="images/search.png" height="35" width="35"/><br/>Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

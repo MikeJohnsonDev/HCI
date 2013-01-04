@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+
+  $('#button').click(function(){
+  {
+    var newLink = $('<li><a href="bolt.html" data-rel="dialog">Usain Bolt</a></li>');
+	newLink.appendTo('#test')
+	var a = "hello";
+	//alert(a);
+  } 
+});
+});
+		</script>
+	</head>
+
+	<body>
+            
+		<div data-role="page" id="popular">
+			<div data-role="header" data-position="fixed" data-id="searchheadnav">
+				<h1>Search</h1>
+				<a href="settings.html" data-icon="cog" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
+			</div>
+			
+
+			<div id="content" data-role="content">
+				
+					<div data-role="navbar" data-grid="c">
+								<ul>
+
+									<li><a href="search.html" rel="external">A-Z</a></li>
+									<li><a href="bysport.html" rel="external">By Sport</a></li>
+									<li><a href="popular.html" class="ui-btn-active" rel="external">Popular</a></li>
+									<li><a href="favourites.html" rel="external">Favourites</a></li>
+								</ul>
+							</div><br />
+					<ul data-role="listview" data-inset="true" data-filter="true">		
+										<li><a href="bolt.html" data-rel="dialog" rel="external">Usain Bolt</a></li>
+                                        <li><a href="ennis.html" data-rel="dialog" rel="external">Jessica Ennis</a></li>
+										<li><a href="pieterson.html" data-rel="dialog" rel="external">Kevin Pieterson</a></li>
+                                        <li><a href="beckham.html" data-rel="dialog" rel="external">David Beckham</a></li>
+                                        <li><a href="gerrard.html" data-rel="dialog" rel="external">Steven Gerrard</a></li>
+										<li><a href="ponting.html" data-rel="dialog" rel="external">Ricky Ponting</a></li>
+                                        <li><a href="henry.html" data-rel="dialog" rel="external">Thierry Henry</a></li>
+                                        <li><a href="zidane.html" data-rel="dialog" rel="external">Zinedine Zidane</a></li>
+                                        <li><a href="federer.html" data-rel="dialog" rel="external">Roger Federer</a></li>
+                    </ul>
+			</div>
+			<div id="content2" data-role="content">
+				<div id="test">
+				<ul data-role="listview" data-inset="true" data-filter="false">
+			
+			</ul>
+			</div>
+			</div>
+			<a href="popular.html" data-role="button" id="button" data-icon="plus" data-iconpos="notext" data-theme="a" data-inline="true" rel="external"></a>
+
+			<div data-role="footer" data-position="fixed" data-id="footnav" >
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="index.html"  rel="external"><img src="images/home.png" height="35" width="35"/><br/>Home</a></li>
+						<li><a href="map.html"  rel="external"><img src="images/minimap.png" height="35" width="35"/><br/>Map</a></li>
+						<li><a href="search.html"  class="ui-btn-active ui-state-persist" rel="external"><img src="images/search.png" height="35" width="35"/><br/>Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+                
+	</body>
+</html>

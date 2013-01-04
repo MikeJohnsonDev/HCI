@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>Which audio formats are supported?</title>
+
+</head>
+<body onload="setSourceButton();">
+<h1>HTML5 Audio Formats Test</h1>
+<p>This is just a simple test/demo of the HTML5 &lt;audio&gt; tag with which to test browser support.</p>
+<p>Assuming you have a modern web browser with working &lt;audio&gt; tag support, click the "play" button in the 
+player below to hear which audio format your browser
+defaults to.  Below this, you'll see a form showing which major web formats your browser SAYS it supports, and
+buttons to click to try out the other formats.</p>
+<p>NOTE: Feel free to try formats that the browser claims it doesn't support - the browser may be lying.</p>
+<audio id="testClip" name="testClip" controls preload="auto">
+<source src="audio/ogg.ogg">
+Y'all's browser doesn't support the &lt;audio&gt; tag, so this test is pointless.  I recommend upgrading to the current version of <a href="http://getfirefox.com">Mozilla Firefox</a>,
+although <a href="http://google.com/chrome">Google's Chrome browser</a> and <a href="http://opera.com">Opera</a> are also good.  
+If you feel you MUST use Microsoft Internet Explorer, <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-9/worldwide-languages">IE9</a> is the earliest version that supports &lt;audio&gt;.
+</audio> <br /><br />
+If your browser supports &lt;audio&gt;, the form below will show what your browser reports about its ability to handle the common web audio formats.:<br />
+<form name="testControls" id="testControls" method="POST" action="/test/index.php">
+<tt>
+Opus Audio (".opus"): <input type="text" name="opusStatus" id="opusStatus" value="(Undetermined)" size="36"/>
+<input type="buttom" id="pusbutton" onclick="switchAudSrc(document.getElementById('testClip'),'opus.opus');" value="(click to try it)" />
+<!-- yes, "pusbutton", not "opusbutton" - this way I can stick to "last three letters" as the file "extension" which makes it easier for my lazy butt to code this -->
+<select name="opusWorks" id="opusWorks"><option checked>(untested)</option><option>Yes</option><option>No</option><option>Partly</option></select>
+<br />
+WebM Audio (".weba"): <input type="text" name="webmStatus" id="webmStatus" value="(Undetermined)" size="36"/>
+<input type="button" id="ebabutton" onclick="switchAudSrc(document.getElementById('testClip'),'weba.weba');" value="(click to try it)" />
+<!-- yes, "ebmbutton", not "webmbutton" - simplifies associating last-three-letters-of-file-extension with the appropriate button -->
+<select name="webaWorks" id="webaWorks"><option checked>(untested)</option><option>Yes</option><option>No</option><option>Partly</option></select>
+<br />
+Ogg Vorbis (".ogg") : <input type="text" name="ogaStatus" id="ogaStatus" value="(Undetermined)" size="36"/>
+<input type="button" id="oggbutton" onclick="switchAudSrc(document.getElementById('testClip'),'audio/ogg.ogg');" value="(click to try it)" />
+<select name="oggWorks" id="oggWorks"><option checked>(untested)</option><option>Yes</option><option>No</option><option>Partly</option></select>
+<br />
+"wave" file(".wav") : <input type="text" name="wavStatus" id="wavStatus" value="(Undetermined)" size="36"/>
+<input type="button" id="wavbutton" onclick="switchAudSrc(document.getElementById('testClip'),'wav.wav');" value="(click to try it)" />
+<select name="wavWorks" id="wavWorks"><option checked>(untested)</option><option>Yes</option><option>No</option><option>Partly</option></select>
+<br />
+"MP3" file (".mp3") : <input type="text" name="mp3Status" id="mp3Status" value="(Undetermined)" size="36"/>
+<input type="button" id="mp3button" onclick="switchAudSrc(document.getElementById('testClip'),'mp3.mp3');" value="(click to try it)" />
+<select name="mp3Works" id="mp3Works"><option checked>(untested)</option><option>Yes</option><option>No</option><option>Partly</option></select>
+<br />
+FLAC file (".flac") : <input type="text" name="flacStatus" id="flacStatus" value="(Undetermined)" size="36"/>
+<input type="button" id="lacbutton" onclick="switchAudSrc(document.getElementById('testClip'),'flac.flac');" value="(click to try it)" /> 
+<select name="flacWorks" id="flacWorks"><option checked>(untested)</option><option>Yes</option><option>No</option><option>Partly</option></select>
+<br />
+</tt> 
+<input type="submit" value="(Click to report your results when ready)" />
+</form>
+<h2>Tell me what works for you!</h2>
+<p>If you're willing, use the drop-down boxes (which say "(untested)" when you first start) next to each sample that you try to indicate if the audio works for you, then click the "(Click to report your results when ready)"
+button when you've tested the formats that you're interested in. The form will let me know which browser you're using and what results you reported - I'll start posting results once enough people have submitted them.</p>
+<h2>Some Notes and Recommendations:</h2>
+<p><b>Internet Explorer 9 or later</b>: I recommend installing the free <a href="http://www.webmproject.org/ie/" title="WebM Microsoft Media Foundation components" target="_New">
+WebM Components for Microsoft Media Foundation</a> to enable playback of WebA audio (and WebM video) as well as creation of WebM files via any software that uses
+the Microsoft Media Foundation system.<br />
+Windows users may also want to install the also-free <a href="http://xiph.org/dshow/" title="Xiph DirectShow Filters for Vorbis support" target="_New">Xiph DirectShow Filters</a> to add
+support for the high-quality, legally-free "Vorbis" audio codec (and "Ogg/Vorbis" files) along with FLAC, Speex,
+and other legally-free audio and video formats. Microsoft refuses to allow .ogg files in IE no matter what, but this will add
+support for Ogg reading and writing to Windows Media player and other applications.<br />
+I also recommend just using some other browser (Firefox or Opera or Chrome), but I'm admittedly somewhat biased.</p>
+<p>
+<b>Safari</b>: I recommend installing the free <a href="https://code.google.com/p/webm/downloads/detail?name=WebM%20Component%20Installer.pkg&can=2&q=" title="WebM Quicktime Component installer" target="_New">
+WebM Quicktime Component</a>, which not only enables Safari to play weba audio (and webm video) but also 
+allows any other QuickTime-using software to play or create WebM media. You may also want to install the also-free
+<a href="http://www.xiph.org/quicktime/download.html" title="Xiph quicktime component" target="_New">XipQT QuickTime Component</a> which does the same for 
+Ogg Vorbis audio, as well as FLAC, Speex, and several other legally-free formats.</p>
+<p><b>Android Browser</b>: ALL versions of Android come with built-in Ogg Vorbis audio support, but support for the HTML5
+&lt;audio&gt; tag wasn't added until the "Gingerbread" release (Android 2.3).  For some odd reason,
+Android browser reports that it doesn't support WebM Audio, but it actually does (<a href="http://code.google.com/p/android/issues/detail?id=19436" title="canPlayType() Bug in Android Browser for WebM" target="_New">This is a known bug since August 2011 in "Gingerbread", and still
+present in the current "Ice Cream Sandwich" version - Wake up, Google!</a>).</p>
+<p><b>iOS</b>: You're stuck with just the few proprietary formats that Apple corp. permits you.  On this page, 
+that's just mp3, and possibly wav. Sorry, nothing anyone can do as long as Apple forbids you access to other formats.</p>
+<script type="text/javascript">
+
+function webaSupport(status)
+{//guess at real support based on output from "canPlayType"
+  if(!status) {
+    return 'Does Not Support';
+  } else if(status=='probably') {
+    return 'Supported!';
+  } else if(status=='maybe') {
+    return 'It should, but it might not.';
+  } else {
+    return 'INVALID RESPONSE to canPlayType';
+  }
+}
+
+function opusSupport(status)
+{//guess at real support based on output from "canPlayType"
+  if(!status) {
+    return 'Does Not Support';
+  } else if(status=='probably') {
+    return 'Supported!';
+  } else if(status=='maybe') {
+    return 'It should, but it might not.';
+  } else {
+    return 'INVALID RESPONSE to canPlayType';
+  }
+}
+
+function flacSupport(status)
+{//guess at real support based on output from "canPlayType"
+  if(!status) {
+    return 'Does Not Support';
+  } else if(status=='probably') {
+    return 'Supported!';
+  } else if(status=='maybe') {
+    return 'It should, but it might not.';
+  } else {
+    return 'INVALID RESPONSE to canPlayType';
+  }
+}
+function oggVorbisSupport(status)
+{//guess at real support based on output from "canPlayType"
+//"audio/ogg"/"application/ogg" seem to usually return "maybe"
+//presumably because the ogg file can contain various different codecs
+//On the web, I'm tending to assume ogg files served for audio with
+//a generic 'ogg' type will always be vorbis, and assume speex, 
+//flac, etc. will actually be served with a distinct mimetype
+//Therefore, "maybe" is assumed to mean "ogg/vorbis" is supported,
+//even ogg/other-codec is not.
+  if(!status) {
+    return 'Does Not Support';
+  } else if(status=='probably') {
+    return 'Supported!';
+  } else if(status=='maybe') {
+    return 'Supported!';
+  } else {
+    return 'INVALID RESPONSE to canPlayType';
+  }
+}
+
+
+function mp3Support(status)
+{//guess at real support based on output from "canPlayType"
+  if(!status) {
+    return 'Does Not Support';
+  } else if(status=='probably') {
+    return 'Supported!';
+  } else if(status=='maybe') {
+    return 'Should, but it might not.';
+  } else {
+    return 'INVALID RESPONSE to canPlayType';
+  }
+}
+
+function wavSupport(status)
+{//guess at real support based on output from "canPlayType"
+  if(!status) {
+    return 'Does Not Support';
+  } else if(status=='probably') {
+    return 'Supported!';
+  } else if(status=='maybe') {
+    return 'It should, but it might not.';
+  } else {
+    return 'INVALID RESPONSE to canPlayType';
+  }
+}
+
+function switchAudSrc(audioElement,srcUrl)
+{
+  audioElement.pause();
+  audioElement.src=''; //force playback to stop and quit buffering. Not sure if this is strictly necessary.
+  audioElement.src=srcUrl;
+  audioElement.currentSrc=srcUrl; //can I even do this?...
+  audioElement.load();
+  setSourceButton();
+  playWhenReady();
+}
+
+function playWhenReady()
+{//wait for media element to be ready, then play
+  audioElement=document.getElementById('testClip');
+  var audioReady=audioElement.readyState;
+  var readyText=['(Not Yet Loaded)','(Got Metadata)','*-=Loading=-*','*-=Buffering=-*','*-=PLAY!=-*'];
+  var currentButton=document.getElementById(getCurrentType()+'button');
+  currentButton.value=readyText[audioElement.readyState];
+  if(audioReady>2) {
+    audioElement.play();
+    currentButton.value='(Now Playing)';
+  } else if(audioElement.error) { //like, DUDE, something went wrong!
+      var errorText=['(no error)','User interrupted download','Network error caused interruption','Miscellaneous problem with media data','Cannot actually decode this media'];
+      alert("Like, DUDE! Something went wrong!\n"+errorText[audioElement.error.code]);
+  } else { //check for media ready again in half a second
+      setTimeout(playWhenReady,500);
+  }
+}
+
+function getCurrentType()
+{//returns last three characters of current src filename for testClip audio element
+  Aud=document.getElementById('testClip');
+  var srcFile=Aud.currentSrc;
+  if(!srcFile) {
+    srcFile=Aud.src; //apparently, changing src attribute by script later CLEARS currentSrc, at least in firefox 10
+  }
+  return srcFile.substr(-3,3);
+}
+
+function setSourceButton()
+{
+  var srcType=getCurrentType();
+  var fileTypes=['pus','eba','ogg','wav','mp3','lac']; //"pus","eba","lac" to simplify "last three characters of file extension" match.
+  while(fileExt=fileTypes.shift()) {
+    var curButton=document.getElementById(fileExt+'button');
+    //alert('trying to find '+fileExt+'button for '+srcType);
+    if (srcType == fileExt) { //highlight button in green
+      curButton.style.backgroundColor='#00FF00';
+      curButton.value='* -=Selected=- *';
+    } else { //un-highlight back to grey
+      curButton.style.backgroundColor='#D3D3D3';
+      curButton.value='(click to try it)';
+    }
+  }
+}
+
+var Aud = document.getElementById('testClip');
+var canPlayOpus = Aud.canPlayType('audio/ogg; codecs="opus"');
+var canPlayWeba = Aud.canPlayType('audio/webm');
+var canPlayOga = Aud.canPlayType('audio/ogg');
+var canPlayAppOgg = Aud.canPlayType('application/ogg');
+var canPlayMp3 = Aud.canPlayType('audio/mpeg');
+var canPlayWav = Aud.canPlayType('audio/wav');
+var canPlayFlac = Aud.canPlayType('audio/flac');
+document.getElementById('opusStatus').value=opusSupport(canPlayOpus);
+document.getElementById('webmStatus').value=webaSupport(canPlayWeba);
+document.getElementById('ogaStatus').value=oggVorbisSupport(canPlayOga)+'(audio/ogg)';
+if(canPlayAppOgg) {
+  document.getElementById('ogaStatus').value+=oggVorbisSupport(canPlayAppOgg)+'(application/ogg)';
+}
+document.getElementById('mp3Status').value=mp3Support(canPlayMp3);
+document.getElementById('wavStatus').value=wavSupport(canPlayWav);
+document.getElementById('flacStatus').value=flacSupport(canPlayFlac);
+
+/*
+Aud.currentSrc.substr(-4,4)=='weba'? document.write(" <b>DEFAULT</b><br />\n"):document.write("<br />\n");
+document.write('<b>Ogg Vorbis (as "audio/ogg" mimetype)</b>: '+oggVorbisSupport(canPlayOga));
+Aud.currentSrc.substr(-4,4)=='.ogg'? document.write(" <b>DEFAULT</b><br />\n"):document.write("<br />\n");
+if (canPlayAppOgg) {
+document.write('<b>Ogg Vorbis (as "application/ogg" mimetype)</b>: '+oggVorbisSupport(canPlayAppOgg)+'<br />');
+}
+document.write('<b>mp3 audio</b>: '+mp3Support(canPlayMp3));
+Aud.currentSrc.substr(-4,4)=='.mp3'? document.write(" <b>DEFAULT</b><br />\n"):document.write("<br />\n");
+document.write('<b>wav files</b>: '+wavSupport(canPlayWav));
+Aud.currentSrc.substr(-4,4)=='.wav'? document.write(" <b>DEFAULT</b><br />\n"):document.write("<br />\n");
+document.write('<b>flac audio</b>: '+flacSupport(canPlayFlac)+'<br />');
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+	</head>
+
+	<body>
+            
+		<div data-role="page" id="favourites">
+			<div data-role="header" data-position="fixed">
+				<h1>Search</h1>
+				<a href="settings.html" data-icon="cog" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
+			</div>
+			
+
+			<div data-role="content">
+				
+					<div data-role="navbar" data-grid="c">
+								<ul>
+									<li><a href="search.html" rel="external">A-Z</a></li>
+									<li><a href="bysport.html" rel="external">By Sport</a></li>
+									<li><a href="popular.html" rel="external">Popular</a></li>
+									<li><a href="favourites.html" class="ui-btn-active" rel="external">Favourites</a></li>
+								</ul>
+							</div><br />
+							
+							<ul data-role="listview" data-inset="true" data-filter="true">		
+										<li>You currently have no favourites</li>
+							</ul>
+					            
+				</div>
+			
+
+			<div data-role="footer" data-position="fixed" data-id="footnav" >
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="index.html"  rel="external"><img src="images/home.png" height="35" width="35"/><br/>Home</a></li>
+						<li><a href="map.html"  rel="external"><img src="images/minimap.png" height="35" width="35"/><br/>Map</a></li>
+						<li><a href="search.html"  class="ui-btn-active ui-state-persist" rel="external"><img src="images/search.png" height="35" width="35"/><br/>Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+                
+	</body>
+</html>
