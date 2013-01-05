@@ -56,10 +56,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="qrscanner.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/qrscanner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.20383693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrscanner.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qrscanner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1715" selection-end="1715" vertical-scroll-proportion="-21.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="58" selection-start="731" selection-end="731" vertical-scroll-proportion="0.29339853">
+            <state line="24" column="58" selection-start="731" selection-end="731" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tennistour.html" />
         <option value="$PROJECT_DIR$/crickettour.html" />
         <option value="$PROJECT_DIR$/directions.html" />
         <option value="$PROJECT_DIR$/qrscanner.html" />
@@ -94,6 +111,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/js/qrscanner.js" />
       </list>
     </option>
   </component>
@@ -332,11 +350,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="77" selection-start="398" selection-end="398" vertical-scroll-proportion="0.098846786" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bycar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="49" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.60543656" />
@@ -345,11 +358,6 @@
     <entry file="file://$PROJECT_DIR$/interactive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="1987" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qrscanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/jsqrcode/src/test.html">
@@ -408,6 +416,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="58" selection-start="731" selection-end="731" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="1" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
@@ -415,9 +430,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/qrscanner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="58" selection-start="731" selection-end="731" vertical-scroll-proportion="0.29339853">
+        <state line="35" column="0" selection-start="1715" selection-end="1715" vertical-scroll-proportion="-21.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/qrscanner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.20383693">
           <folding />
         </state>
       </provider>
