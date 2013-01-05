@@ -1,5 +1,5 @@
-﻿/**
- * Date: 04/01/13
+/**
+ * Date: 05/01/13
  * Copyright © Michael Johnson 2013
  */
 
@@ -9,17 +9,16 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
 	navigator.splashscreen.hide();
-
-	window.plugins.barcodeScanner.scan(onSuccess, onError);
+	$("#qrScanner").click(window.plugins.barcodeScanner.scan(onSuccess, onError));
 }
 
 function onSuccess(result)
 {
 	/*
-	alert("We got a barcode\n" +
-				  "Result: " + result.text + "\n" +
-				  "Format: " + result.format + "\n" +
-				  "Cancelled: " + result.cancelled);*/
+	 alert("We got a barcode\n" +
+	 "Result: " + result.text + "\n" +
+	 "Format: " + result.format + "\n" +
+	 "Cancelled: " + result.cancelled);*/
 
 	$.mobile.changePage(result.text);
 }

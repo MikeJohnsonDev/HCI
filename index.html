@@ -18,11 +18,10 @@
 		<script type="text/javascript" src="phonegap.js"></script>
 
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+
+		<script type="text/javascript" src="barcodescanner.js"></script>
+
 		<script type="text/javascript" src="js/index.js"></script>
-<!--
-		<script type="text/javascript">
-			app.initialize();
-		</script>-->
 
 		<style type="text/css">
 					img.centered {
@@ -45,7 +44,7 @@
 			<div class="ui-block-a">
 					<a href="tours.html" data-role="button" data-theme="d" rel="external">Tours<br/>
 					<img src="images/tour.png" height="100" width="100"/></a>
-					<a href="qrscanner.html" data-role="button" data-theme="d" rel="external">QR Scanner<br/>
+					<a href="javascript:void(0)" id="qrScanner" data-role="button" data-theme="d" rel="external">QR Scanner<br/>
 					<img src="images/qrscanner.png" height="100" width="100"/></a>
 					<a href="info.html" data-role="button" data-theme="d" rel="external">General Info<br/>
 					<img src="images/info.png" height="100" width="100"/></a>

@@ -9,4 +9,21 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
 	navigator.splashscreen.hide();
+	$("#qrScanner").click(window.plugins.barcodeScanner.scan(onSuccess, onError));
+}
+
+function onSuccess(result)
+{
+	/*
+	 alert("We got a barcode\n" +
+	 "Result: " + result.text + "\n" +
+	 "Format: " + result.format + "\n" +
+	 "Cancelled: " + result.cancelled);*/
+
+	$.mobile.changePage(result.text);
+}
+
+function onError(message)
+{
+	alert("Error: " + message);
 }

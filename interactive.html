@@ -6,7 +6,22 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).on("mobileinit", function()
+			{
+				$.support.cors = true;
+				$.mobile.allowCrossDomainPages = true;
+			});
+		</script>
+
+		<script type="text/javascript" src="phonegap.js"></script>
+
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+
+		<script type="text/javascript" src="barcodescanner.js"></script>
+
+		<script type="text/javascript" src="js/interactive.js"></script>
 	</head>
 
 	<body>
@@ -21,7 +36,7 @@
 				<ul data-role="listview">
 					<li><a href="toptrumps.html" rel="external"><h1>Top Trumps</h1></a></li>
 					<li><a href="listenandspeak.html" rel="external"><h1>Listen and Speak</h1></a></li>
-					<li><a href="qrscanner.html" rel="external"><h1>QR Scanner</h1></a></li>
+					<li><a href="javascript:void(0)" id="qrScanner" rel="external"><h1>QR Scanner</h1></a></li>
 					<li><a href="beasportsstar.html" rel="external" data-rel="dialog" data-transition="slide"><h1>Be A Sports Star</h1></a></li>
 					<li><a href="phototovideo.html" rel="external"><h1>Photo To Video</h1></a></li>
 					<li><a href="slidepuzzlechoose.html" rel="external" data-rel="dialog"><h1>Slide Puzzle</h1></a></li>
