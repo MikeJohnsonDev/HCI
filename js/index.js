@@ -9,7 +9,11 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
 	navigator.splashscreen.hide();
-	$("#qrScanner").click(window.plugins.barcodeScanner.scan(onSuccess, onError));
+
+	$("#qrScanner").addEventListener("click", function ()
+	{
+		window.plugins.barcodeScanner.scan(onSuccess, onError);
+	}, false);
 }
 
 function onSuccess(result)
