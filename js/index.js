@@ -1,5 +1,5 @@
 /**
- * Date: 04/01/13
+ * Date: 05/01/13
  * Copyright © Michael Johnson 2013
  */
 
@@ -9,6 +9,4 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
 	navigator.splashscreen.hide();
-
-	alert("Ready!");
 }

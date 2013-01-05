@@ -6,9 +6,19 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).on("mobileinit", function ()
+			{
+				$.support.cors = true;
+				$.mobile.allowCrossDomainPages = true;
+			});
+		</script>
+		
+		<script type="text/javascript" src="phonegap.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
 		
-		<script type="text/javascript" src="js/qrcode/grid.js"></script>
+<!--		<script type="text/javascript" src="js/qrcode/grid.js"></script>
 		<script type="text/javascript" src="js/qrcode/version.js"></script>
 		<script type="text/javascript" src="js/qrcode/detector.js"></script>
 		<script type="text/javascript" src="js/qrcode/formatinf.js"></script>
@@ -24,18 +34,11 @@
 		<script type="text/javascript" src="js/qrcode/qrcode.js"></script>
 		<script type="text/javascript" src="js/qrcode/findpat.js"></script>
 		<script type="text/javascript" src="js/qrcode/alignpat.js"></script>
-		<script type="text/javascript" src="js/qrcode/databr.js"></script>
+		<script type="text/javascript" src="js/qrcode/databr.js"></script>-->
 
-		<script type="text/javascript">
-			window.URL = window.URL || window.webkitURL;
-			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
-									 navigator.mozGetUserMedia || navigator.msGetUserMedia;
+		<script type="text/javascript" src="barcodescanner.js"></script>
 
-			$(document).on("pageshow", function ()
-			{
-
-			});
-		</script>
+		<script type="text/javascript" src="js/qrscanner.js"></script>
 	</head>
 
 	<body>
@@ -43,20 +46,11 @@
 			<div data-role="header" data-position="fixed">
 				<a href="#" data-direction="reverse" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
 				<h1>QR Scanner</h1>
-				<a href="settings.html" data-icon="cog" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
+				<a href="settings.html" data-icon="gear" data-iconpos="notext" class="ui-btn-right" rel="external">Settings</a>
 			</div>
 
 			<div data-role="content">
-				<object id="iembedflash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240">
-					<param name="movie" value="swf/camcanvas.swf" />
-					<param name="quality" value="high" />
-					<param name="allowScriptAccess" value="always" />
-					<embed allowScriptAccess="always" id="embedflash" src="swf/camcanvas.swf" quality="high"
-						   width="320" height="240" type="application/x-shockwave-flash"
-						   pluginspage="http://www.macromedia.com/go/getflashplayer" mayscript="true"></embed>
-				</object>
-
-				<canvas id="qrcanvas" style="width: 800px; height: 600px"></canvas>
+				<img id="qrImage" style="width: 300px; height: 300px" />
 			</div>
 
 			<div data-role="footer" data-position="fixed" data-id="footnav">
