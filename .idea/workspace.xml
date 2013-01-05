@@ -38,10 +38,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.56836903">
+            <state line="46" column="49" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-28.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interactive.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interactive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="53" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.46952224">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interactive.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/interactive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="1" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,7 +68,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="59" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+            <state line="6" column="58" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,11 +107,11 @@
         <option value="$PROJECT_DIR$/listenandspeak.html" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/js/qrscanner.js" />
-        <option value="$PROJECT_DIR$/js/interactive.js" />
-        <option value="$PROJECT_DIR$/interactive.html" />
         <option value="$PROJECT_DIR$/js/listenandspeak.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/interactive.js" />
+        <option value="$PROJECT_DIR$/interactive.html" />
       </list>
     </option>
   </component>
@@ -381,20 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/interactive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="1" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interactive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="72" selection-start="722" selection-end="722" vertical-scroll-proportion="0.2638191">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/listenandspeak.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="1" selection-start="304" selection-end="305" vertical-scroll-proportion="0.0">
@@ -404,14 +408,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+        <state line="6" column="58" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="49" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.56836903">
+        <state line="46" column="49" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-28.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/interactive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="1" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interactive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="53" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.46952224">
           <folding />
         </state>
       </provider>
