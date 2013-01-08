@@ -11,11 +11,19 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
 	navigator.splashscreen.hide();
+
+	$("#listenButton").click(function ()
+	{
+		alert("test");
+		listen();
+
+		return false;
+	});
 }
 
 function listen()
 {
-	navigator.notification.alert($("#listenButton").text());
+	alert($("#listenButton").text());
 	alert($("#listenButton").html());
 
 	if ($("#listenButton").text() == "Listen")
