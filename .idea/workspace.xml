@@ -33,15 +33,17 @@
         <entry file="file://$PROJECT_DIR$/js/listen.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="30" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1357674726608" expanded="true" signature="318:633" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speak.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="speak.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/speak.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="1" selection-start="641" selection-end="641" vertical-scroll-proportion="0.41966426">
+            <state line="35" column="1" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="58" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
+            <state line="5" column="26" selection-start="196" selection-end="196" vertical-scroll-proportion="0.061124694">
               <folding />
             </state>
           </provider>
@@ -105,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/js/interactive.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/interactive.html" />
@@ -121,6 +122,7 @@
         <option value="$PROJECT_DIR$/js/listenandspeak.js" />
         <option value="$PROJECT_DIR$/js/listen.js" />
         <option value="$PROJECT_DIR$/js/speak.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -442,13 +444,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="58" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speak.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="47" selection-start="686" selection-end="686" vertical-scroll-proportion="-11.875">
@@ -473,13 +468,22 @@
     <entry file="file://$PROJECT_DIR$/js/listen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="30" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1357674726608" expanded="true" signature="318:633" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/speak.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="641" selection-end="641" vertical-scroll-proportion="0.41966426">
+        <state line="35" column="1" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="26" selection-start="196" selection-end="196" vertical-scroll-proportion="0.061124694">
           <folding />
         </state>
       </provider>
