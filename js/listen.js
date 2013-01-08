@@ -15,7 +15,7 @@ function onDeviceReady()
 
 function listen()
 {
-	alert($("#listenButton").text());
+	navigator.notification.alert($("#listenButton").text());
 	alert($("#listenButton").html());
 
 	if ($("#listenButton").text() == "Listen")

@@ -7,6 +7,36 @@
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript">
+			var settings = loadSettings();
+
+			$(document).on("pageshow", function ()
+			{
+				if (settings.largeText)
+				{
+					$("*").each(function ()
+					{
+						var size = $(this).css("font-size");
+
+						if (size == "16px")
+							$(this).css("font-size", "24px");
+
+						if (size == "14px")
+							$(this).css("font-size", "22px");
+
+						if (size == "12.5px")
+							$(this).css("font-size", "20.5px");
+
+						if (size == "12px")
+							$(this).css("font-size", "20px");
+
+						if (size == "11px")
+							$(this).css("font-size", "18px");
+					});
+				}
+			});
+		</script>
 	</head>
 
 	<body>
@@ -19,12 +49,12 @@
 
 			<div data-role="content">
 				<ul data-role="listview">
-					<li><a href="fulltour.html" rel="external"><h1>Full Tour</h1></a></li>
-					<li><a href="athleticstour.html" rel="external"><h1>Athletics Tour</h1></a></li>
-					<li><a href="crickettour.html" rel="external"><h1>Cricket Tour</h1></a></li>
-					<li><a href="footballtour.html" rel="external"><h1>Football Tour</h1></a></li>
-					<li><a href="rugbytour.html" rel="external"><h1>Rugby Tour</h1></a></li>
-					<li><a href="tennistour.html" rel="external"><h1>Tennis Tour</h1></a></li>
+					<li><a href="fulltour.html" rel="external"><img src="images/tour.png" /><h1>Full Tour</h1><p>A narrated tour around all the exhibits in the Museum</p></a></li>
+					<li><a href="athleticstour.html" rel="external"><img src="images/athleticstour.png" /><h1>Athletics Tour</h1><p>A narrated tour around the Athletics exhibits.</p></a></li>
+					<li><a href="crickettour.html" rel="external"><img src="images/crickettour.png" /><h1>Cricket Tour</h1><p>A narrated tour around the Cricket exhibits.<p></a></li>
+					<li><a href="footballtour.html" rel="external"><img src="images/footballtour.png" /><h1>Football Tour</h1><p>A narrated tour around the Football exhibits.</p></a></li>
+					<li><a href="rugbytour.html" rel="external"><img src="images/rugbytour.png" /><h1>Rugby Tour</h1><p>A narrated tour around the Rugby exhibits.</p></a></li>
+					<li><a href="tennistour.html" rel="external"><img src="images/tennistour.png" /><h1>Tennis Tour</h1><p>A narrated tour around the Tennis exhibits.</p></a></li>
 				</ul>
 			</div>
 

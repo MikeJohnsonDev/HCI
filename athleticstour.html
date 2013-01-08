@@ -9,7 +9,36 @@
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
 		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
 		<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript">
+			var settings = loadSettings();
 
+			$(document).on("pageshow", function ()
+			{
+				if (settings.largeText)
+				{
+					$("*").each(function ()
+					{
+						var size = $(this).css("font-size");
+
+						if (size == "16px")
+							$(this).css("font-size", "24px");
+
+						if (size == "14px")
+							$(this).css("font-size", "22px");
+
+						if (size == "12.5px")
+							$(this).css("font-size", "20.5px");
+
+						if (size == "12px")
+							$(this).css("font-size", "20px");
+
+						if (size == "11px")
+							$(this).css("font-size", "18px");
+					});
+				}
+			});
+		</script>
 		<script type="text/javascript">
 			$(document).on("pageshow", function ()
 			{
@@ -79,7 +108,7 @@
 
 			<div data-role="content">
 			<div data-role="collapsible-set">
-			<div data-role="collapsible" data-collapsed="true">
+			<div data-role="collapsible" data-collapsed="false">
 				<h3>Instructions for use</h3>
 				<ul>
 					<li>Swipe image or click arrows to navigate through exhibits</li>

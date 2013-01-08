@@ -8,7 +8,36 @@
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript">
+			var settings = loadSettings();
 
+			$(document).on("pageshow", function ()
+			{
+				if (settings.largeText)
+				{
+					$("*").each(function ()
+					{
+						var size = $(this).css("font-size");
+
+						if (size == "16px")
+							$(this).css("font-size", "24px");
+
+						if (size == "14px")
+							$(this).css("font-size", "22px");
+
+						if (size == "12.5px")
+							$(this).css("font-size", "20.5px");
+
+						if (size == "12px")
+							$(this).css("font-size", "20px");
+
+						if (size == "11px")
+							$(this).css("font-size", "18px");
+					});
+				}
+			});
+		</script>
 		<script type="text/javascript">
 			$(document).on("mobileinit", function()
 			{
@@ -54,7 +83,7 @@
 			<div class="ui-block-a">
 					<a href="tours.html" data-role="button" data-theme="d" rel="external">Tours<br/>
 					<img src="images/tour.png" height="100" width="100"/></a>
-					<a href="#" onclick="qrScan()" data-role="button" data-theme="d" rel="external">QR Scanner<br/>
+					<a href="#" onclick="qrScan(); return false;" data-role="button" data-theme="d" rel="external">QR Scanner<br/>
 					<img src="images/qrscanner.png" height="100" width="100"/></a>
 					<a href="info.html" data-role="button" data-theme="d" rel="external">General Info<br/>
 					<img src="images/info.png" height="100" width="100"/></a>

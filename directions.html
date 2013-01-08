@@ -11,7 +11,36 @@
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBbIWQUGV-qcyaKrSaFktfHS42xhrVWHVc&sensor=true"></script>
 		<script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.map.extensions.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript">
+			var settings = loadSettings();
 
+			$(document).on("pageshow", function ()
+			{
+				if (settings.largeText)
+				{
+					$("*").each(function ()
+					{
+						var size = $(this).css("font-size");
+
+						if (size == "16px")
+							$(this).css("font-size", "24px");
+
+						if (size == "14px")
+							$(this).css("font-size", "22px");
+
+						if (size == "12.5px")
+							$(this).css("font-size", "20.5px");
+
+						if (size == "12px")
+							$(this).css("font-size", "20px");
+
+						if (size == "11px")
+							$(this).css("font-size", "18px");
+					});
+				}
+			});
+		</script>
 		<script type="text/javascript">
 			$(document).on("pageshow", function ()
 			{

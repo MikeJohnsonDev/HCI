@@ -8,7 +8,37 @@
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript">
+			var settings = loadSettings();
 
+			$(document).on("pageshow", function ()
+			{
+				if (settings.largeText)
+				{
+					$("*").each(function ()
+					{
+						var size = $(this).css("font-size");
+
+						if (size == "16px")
+							$(this).css("font-size", "24px");
+
+						if (size == "14px")
+							$(this).css("font-size", "22px");
+
+						if (size == "12.5px")
+							$(this).css("font-size", "20.5px");
+
+						if (size == "12px")
+							$(this).css("font-size", "20px");
+
+						if (size == "11px")
+							$(this).css("font-size", "18px");
+					});
+				}
+			});
+		</script>
+		
 		<script type="text/javascript">
 			$(document).on("mobileinit", function()
 			{
@@ -44,13 +74,15 @@
 
 			<div data-role="content">
 				<ul data-role="listview">
-					<li><a href="toptrumps.html" rel="external"><h1>Top Trumps</h1></a></li>
-					<li><a href="listenandspeak.html" rel="external"><h1>Listen and Speak</h1></a></li>
-					<li><a href="#" onclick="qrScan()" rel="external"><h1>QR Scanner</h1></a></li>
-					<li><a href="beasportsstar.html" data-rel="dialog" data-transition="slide"><h1>Be A Sports Star</h1></a></li>
-					<li><a href="phototovideo.html" rel="external"><h1>Photo To Video</h1></a></li>
-					<li><a href="slidepuzzlechoose.html" data-rel="dialog"><h1>Slide Puzzle</h1></a></li>
-					<li><a href="funfact1.html" data-rel="dialog" data-transition="slide"><h1>Fun Facts</h1></a></li>
+				<li data-role="list-divider">Audio/Visual</li>
+					<li><a href="#" onclick="qrScan()" rel="external"><img src="images/qrscanner.png" /><h1>QR Scanner</h1><p>Use the QR scanner to discover more info about an exhibit.</p></a></li>
+					<li><a href="phototovideo.html" rel="external"><img src="images/photovideoicon.png" /><h1>Photo To Video</h1><p>Turn any photograph into a live video!</p></a></li>
+					<li><a href="listenandspeak.html" rel="external"><img src="images/listenspeakicon.png" /><h1>Listen and Speak</h1><p>Tell us your thoughts about an exhibit or hear other peoples.</p></a></li>
+				<li data-role="list-divider">Kids!</li>
+					<li><a href="toptrumps.html" rel="external"><img src="images/toptrumpsicon.png" /><h1>Top Trumps</h1><p>Find them, Compare them, Share them!</p></a></li>
+					<li><a href="beasportsstar.html" data-rel="dialog" data-transition="slide"><img src="images/sportstaricon.png" /><h1>Be A Sports Star</h1><p>Every fancied being a sports star? Here is your chance!</p></a></li>
+					<li><a href="slidepuzzlechoose.html" data-rel="dialog"><img src="images/slidepuzzleicon.png" /><h1>Slide Puzzle</h1><p>Fancy playing a sporty puzzle? Think you can beat them all?</p></a></li>
+					<li><a href="funfact1.html" data-rel="dialog" data-transition="slide"><img src="images/funfactsicon.png" /><h1>Fun Facts</h1><p>Amazing facts about sports from around the globe!</p></a></li>
 				</ul>
 			</div>
 
