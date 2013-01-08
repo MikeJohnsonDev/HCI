@@ -15,6 +15,9 @@ function onDeviceReady()
 
 function listen()
 {
+	alert($("#listenButton").text());
+	alert($("#listenButton").html());
+
 	if ($("#listenButton").text() == "Listen")
 	{
 		$("#listenButton").text("Stop");
