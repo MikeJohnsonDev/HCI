@@ -15,6 +15,8 @@ function onDeviceReady()
 
 function listen()
 {
+	alert("Test");
+/*
 	if ($("#listenButton").text() == "Listen")
 	{
 		$("#listenButton").text("Stop");
@@ -33,4 +35,5 @@ function listen()
 
 		listenMedia.stop();
 	}
+*/
 }
