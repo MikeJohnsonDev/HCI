@@ -3,7 +3,7 @@
  * Copyright © Michael Johnson 2013
  */
 
-var media;
+var listenMedia;
 
 // Listener that will invoke the onDeviceReady() function as soon as phonegap has loaded properly
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -22,18 +22,18 @@ function listen()
 	{
 		$("#listenButton").text("Stop");
 
-		if (media == null)
+		if (listenMedia == null)
 		{
-			media = new Media("audio/listen.mp3", console.log("Created media."),
-							  alert("Error creating media."));
+			listenMedia = new Media("audio/listen.mp3", console.log("Created listenMedia."),
+							  alert("Error creating listenMedia."));
 		}
 
-		media.play();
+		listenMedia.play();
 	}
 	else
 	{
 		$("#listenButton").text("Listen");
 
-		media.stop();
+		listenMedia.stop();
 	}
 }
