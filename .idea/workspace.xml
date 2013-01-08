@@ -41,7 +41,7 @@
       <file leaf-file-name="listen.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="27" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.38944724">
+            <state line="38" column="82" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.47738692">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="64" selection-start="2433" selection-end="2433" vertical-scroll-proportion="-44.75">
+            <state line="84" column="77" selection-start="2383" selection-end="2567" vertical-scroll-proportion="-29.125">
               <folding />
             </state>
           </provider>
@@ -484,14 +484,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="64" selection-start="2433" selection-end="2433" vertical-scroll-proportion="-44.75">
+        <state line="84" column="77" selection-start="2383" selection-end="2567" vertical-scroll-proportion="-29.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/listen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="27" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.38944724">
+        <state line="38" column="82" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.47738692">
           <folding />
         </state>
       </provider>

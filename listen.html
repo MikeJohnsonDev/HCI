@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 
 		<script type="text/javascript">
-			$(document).on("mobileinit", function()
+			$(document).on("mobileinit", function ()
 			{
 				$.support.cors = true;
 				$.mobile.allowCrossDomainPages = true;
@@ -17,7 +17,9 @@
 		
 		<script type="text/javascript" src="phonegap.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="js/listen.js"></script>
+
+		<script type="text/javascript" src="js/index.js"></script>
+		<!--<script type="text/javascript" src="js/listen.js"></script>-->
 	</head>
 
 	<body>
@@ -29,8 +31,12 @@
 			</div>
 
 			<div data-role="content">
+<!--
 				<a href="#" onclick="listen(); return false;" data-role="button">Listen</a>
-			</div>
+-->
+
+				<a href="#" onclick="qrScan(); return false;" data-role="button" data-theme="d" rel="external">QR Scanner<br/>
+					<img src="images/qrscanner.png" height="100" width="100"/></a>			</div>
 
 			<div data-role="footer" data-position="fixed" data-id="footnav">
 				<div data-role="navbar" data-iconpos="top">
