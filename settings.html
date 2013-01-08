@@ -7,6 +7,64 @@
 		<link rel="stylesheet" href="css/jqm-icon-pack-2.1.2-fa.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+
+		<script type="text/javascript">
+			var settings = loadSettings();
+
+			$(document).on("pageshow", function ()
+			{
+				$("#largeText").val(settings.largeText ? "on" : "off");
+				$("#invertColours").val(settings.invertColours ? "on" : "off");
+				$("#keepScreenOn").val(settings.keepScreenOn ? "on" : "off");
+				$("#magnifier").val(settings.magnifier ? "on" : "off");
+				$("#language").val(settings.language);
+
+				$("#largeText").change(function ()
+				{
+					settings.largeText = $("#largeText").val() != "off";
+					saveSettings(settings);
+				});
+
+				$("#invertColours").change(function ()
+				{
+					settings.invertColours = $("#invertColours").val() != "off";
+					saveSettings(settings);
+				});
+
+				$("#keepScreenOn").change(function ()
+				{
+					settings.keepScreenOn = $("#keepScreenOn").val() != "off";
+					saveSettings(settings);
+				});
+
+				$("#magnifer").change(function ()
+				{
+					settings.magnifer = $("#magnifer").val() != "off";
+					saveSettings(settings);
+				});
+
+				$("#language").change(function ()
+				{
+					settings.language = $("#language").val();
+					saveSettings(settings);
+				});
+
+				if (settings.largeText)
+				{
+					$("*").each(function ()
+					{
+						var size = $(this).css("font-size");
+
+						if (size == "16px")
+							$(this).css("font-size", "24px");
+
+						if (size == "12.5px")
+							$(this).css("font-size", "20.5px");
+					});
+				}
+			});
+		</script>
 	</head>
 
 	<body>
