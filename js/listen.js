@@ -11,14 +11,6 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
 	navigator.splashscreen.hide();
-
-	$("#listenButton").click(function ()
-	{
-		alert("test");
-		listen();
-
-		return false;
-	});
 }
 
 function listen()
