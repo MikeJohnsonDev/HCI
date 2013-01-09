@@ -15,9 +15,9 @@ function onDeviceReady()
 
 function speak()
 {
-	if ($("#speakButton").text() == "Speak")
+	if ($("#speakButton").children().text() == "Click here to start recording your story or fact")
 	{
-		$("#speakButton").text("Stop");
+		$("#speakButton").children().text("Stop");
 
 		if (media == null)
 		{
@@ -29,7 +29,7 @@ function speak()
 	}
 	else
 	{
-		$("#speakButton").text("Speak");
+		$("#speakButton").children().text("Click here to start recording your story or fact");
 
 		media.stopRecord();
 	}

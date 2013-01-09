@@ -15,9 +15,9 @@ function onDeviceReady()
 
 function listen()
 {
-	if ($("#listenButton").text() == "Listen")
+	if ($("#listenButton").children().text() == "Click here to listen to stories and facts relating to the museum")
 	{
-		$("#listenButton").text("Stop");
+		$("#listenButton").children().text("Stop");
 
 		if (listenMedia == null)
 		{
@@ -29,7 +29,7 @@ function listen()
 	}
 	else
 	{
-		$("#listenButton").text("Listen");
+		$("#listenButton").children().text("Click here to listen to stories and facts relating to the museum");
 
 		listenMedia.stop();
 	}
