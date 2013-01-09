@@ -3,7 +3,7 @@
  * Copyright © Michael Johnson 2013
  */
 
-//var listenMedia;
+var listenMedia;
 
 // Listener that will invoke the onDeviceReady() function as soon as phonegap has loaded properly
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -15,8 +15,6 @@ function onDeviceReady()
 
 function listen()
 {
-	alert("Test");
-/*
 	if ($("#listenButton").text() == "Listen")
 	{
 		$("#listenButton").text("Stop");
@@ -35,5 +33,4 @@ function listen()
 
 		listenMedia.stop();
 	}
-*/
 }

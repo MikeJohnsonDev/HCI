@@ -23,16 +23,16 @@
       <file leaf-file-name="listenandspeak.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listenandspeak.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="794" selection-end="794" vertical-scroll-proportion="-5.2040815">
+            <state line="26" column="93" selection-start="1079" selection-end="1079" vertical-scroll-proportion="-16.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listen.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="listen.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="9" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.74120605">
+            <state line="33" column="61" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-20.625">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="speak.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/speak.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+            <state line="12" column="34" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="fulltour.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fulltour.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="31" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0">
+            <state line="101" column="31" selection-start="3267" selection-end="3267" vertical-scroll-proportion="-0.30612245">
               <folding />
             </state>
           </provider>
@@ -95,16 +95,16 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+            <state line="10" column="34" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listen.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="listen.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/listen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="0" selection-end="699" vertical-scroll-proportion="0.0">
+            <state line="34" column="5" selection-start="673" selection-end="673" vertical-scroll-proportion="0.4142973">
               <folding />
             </state>
           </provider>
@@ -129,16 +129,16 @@
         <option value="$PROJECT_DIR$/slidepuzzlehard.html" />
         <option value="$PROJECT_DIR$/js/settings.js" />
         <option value="$PROJECT_DIR$/settings.html" />
-        <option value="$PROJECT_DIR$/listenandspeak.html" />
         <option value="$PROJECT_DIR$/js/listenandspeak.js" />
         <option value="$PROJECT_DIR$/fulltour.html" />
         <option value="$PROJECT_DIR$/speak.html" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/listenandspeak.html" />
+        <option value="$PROJECT_DIR$/listen.html" />
         <option value="$PROJECT_DIR$/js/speak.js" />
         <option value="$PROJECT_DIR$/js/listen.js" />
-        <option value="$PROJECT_DIR$/listen.html" />
       </list>
     </option>
   </component>
@@ -430,30 +430,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fulltour.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="31" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="26" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listenandspeak.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="794" selection-end="794" vertical-scroll-proportion="-5.2040815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interactive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -465,9 +444,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speak.html">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="63" selection-start="1199" selection-end="1199" vertical-scroll-proportion="-20.625">
+        <state line="10" column="34" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interactive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -479,30 +465,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/fulltour.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+        <state line="101" column="31" selection-start="3267" selection-end="3267" vertical-scroll-proportion="-0.30612245">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/listen.js">
+    <entry file="file://$PROJECT_DIR$/listenandspeak.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="0" selection-end="699" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/speak.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+        <state line="26" column="93" selection-start="1079" selection-end="1079" vertical-scroll-proportion="-16.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/listen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="9" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.74120605">
+        <state line="33" column="61" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-20.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="63" selection-start="1199" selection-end="1199" vertical-scroll-proportion="-20.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/speak.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/listen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="673" selection-end="673" vertical-scroll-proportion="0.4142973">
           <folding />
         </state>
       </provider>
