@@ -14,15 +14,14 @@
 				$.mobile.allowCrossDomainPages = true;
 			});
 		</script>
-
-		<script type="text/javascript" src="js/index.js"></script>
-		<!--<script type="text/javascript" src="js/listen.js"></script>-->
 		
 		<script type="text/javascript" src="phonegap.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+
+		<script type="text/javascript" src="js/listen.js"></script>
 	</head>
 
-	<body>
+	<body onload="onLoad();">
 		<div data-role="page" id="listen">
 			<div data-role="header" data-position="fixed">
 				<a href="#" data-direction="reverse" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
@@ -31,12 +30,7 @@
 			</div>
 
 			<div data-role="content">
-<!--
 				<a href="#" onclick="listen(); return false;" data-role="button">Listen</a>
--->
-
-				<a href="#" onclick="qrScan(); return false;" data-role="button" data-theme="d" rel="external">QR Scanner<br/>
-					<img src="images/qrscanner.png" height="100" width="100"/></a>			</div>
 
 			<div data-role="footer" data-position="fixed" data-id="footnav">
 				<div data-role="navbar" data-iconpos="top">

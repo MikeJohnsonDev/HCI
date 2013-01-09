@@ -5,8 +5,11 @@
 
 //var listenMedia;
 
-// Listener that will invoke the onDeviceReady() function as soon as phonegap has loaded properly
-document.addEventListener("deviceready", onDeviceReady, false);
+function onLoad()
+{
+	// Listener that will invoke the onDeviceReady() function as soon as phonegap has loaded properly
+	document.addEventListener("deviceready", onDeviceReady, false);
+}
 
 function onDeviceReady()
 {
