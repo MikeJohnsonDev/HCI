@@ -21,7 +21,7 @@ function listen()
 
 		if (listenMedia == null)
 		{
-			listenMedia = new Media("audio/listen.mp3", console.log("Created listenMedia."),
+			listenMedia = new Media("/android_asset/www/audio/listen.mp3", console.log("Created listenMedia."),
 							  alert("Error creating listenMedia."));
 		}
 
