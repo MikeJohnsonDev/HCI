@@ -20,10 +20,12 @@
 	
 	<div data-role="content" data-theme="a">
 		<h3>Share</h3>
-		<a href="dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" rel="external">Share to Facebook</a>
-		<a href="dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" rel="external">Share to Twitter</a>
-		<a href="dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" rel="external">Share to Google+</a>
-		 		  
+		<a href="#popupBasic" data-role="button" data-theme="b" data-rel="popup">Share to Facebook</a>
+		<a href="#popupBasic" data-role="button" data-theme="b" data-rel="popup">Share to Twitter</a>
+		<a href="#popupBasic" data-role="button" data-theme="b" data-rel="popup">Share to Google+</a>
+		 		  <div data-role="popup" id="popupBasic" data-theme="b" data-overlay-theme="a">
+						<p>Upload successful<p>
+					</div>
 		<a href="index.html" data-role="button" data-rel="back" data-theme="a" rel="external">Cancel</a>
 	</div>
 </div>

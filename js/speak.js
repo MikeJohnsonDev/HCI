@@ -21,8 +21,8 @@ function speak()
 
 		if (media == null)
 		{
-			media = new Media("audio/speak.mp3", console.log("Created media."),
-							  alert("Error creating media."));
+			media = new Media("speak.mp3", console.log("Created media."),
+							  console.log("Error creating media."));
 		}
 		
 		media.startRecord();

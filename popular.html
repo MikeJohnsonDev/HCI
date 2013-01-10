@@ -8,6 +8,7 @@
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
 		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript" src="js/favourites.js"></script>
 		<script type="text/javascript">
 			var settings = loadSettings();
 
@@ -37,18 +38,15 @@
 				}
 			});
 		</script>
-		<script type="text/javascript">
-			$(function () {
 
-  $('#button').click(function(){
-  {
-    var newLink = $('<li><a href="bolt.html" data-rel="dialog">Usain Bolt</a></li>');
-	newLink.appendTo('#test')
-	var a = "hello";
-	//alert(a);
-  } 
-});
-});
+		<script type="text/javascript">
+			$(document).on("pageshow", function ()
+			{
+				$(".flexslider").flexslider({
+					animation: "slide",
+					touch: true
+				});
+			});
 		</script>
 	</head>
 
@@ -84,14 +82,6 @@
                                         <li><a href="federer.html" data-rel="dialog" rel="external">Roger Federer</a></li>
                     </ul>
 			</div>
-			<div id="content2" data-role="content">
-				<div id="test">
-				<ul data-role="listview" data-inset="true" data-filter="false">
-			
-			</ul>
-			</div>
-			</div>
-			<a href="popular.html" data-role="button" id="button" data-icon="plus" data-iconpos="notext" data-theme="a" data-inline="true" rel="external"></a>
 
 			<div data-role="footer" data-position="fixed" data-id="footnav" >
 				<div data-role="navbar" data-iconpos="top">

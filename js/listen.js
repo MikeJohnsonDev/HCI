@@ -22,7 +22,7 @@ function listen()
 		if (listenMedia == null)
 		{
 			listenMedia = new Media("/android_asset/www/audio/listen.mp3", console.log("Created listenMedia."),
-							  alert("Error creating listenMedia."));
+							  console.log("Error creating listenMedia."));
 		}
 
 		listenMedia.play();
